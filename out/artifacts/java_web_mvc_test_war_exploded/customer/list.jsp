@@ -25,6 +25,7 @@
         <td>Name</td>
         <td>Email</td>
         <td>Address</td>
+        <td>Avatar</td>
         <td>Edit</td>
         <td>Delete</td>
     </tr>
@@ -33,6 +34,8 @@
             <td><a href="/customers?action=view&id=${customer.getId()}">${customer.getName()}</a></td>
             <td>${customer.getEmail()}</td>
             <td>${customer.getAddress()}</td>
+            <td><img src="<%request.getServletContext().getRealPath("");%>/images/${customer.getAvatar()}" alt="anh sp"></td>
+
             <td><a href="/customers?action=edit&id=${customer.getId()}">edit</a></td>
             <td><a href="/customers?action=delete&id=${customer.getId()}">delete</a></td>
         </tr>

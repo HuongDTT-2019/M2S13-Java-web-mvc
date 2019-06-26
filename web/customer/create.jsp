@@ -26,7 +26,7 @@
 <p>
     <a href="/customers">Back to customer list</a>
 </p>
-<form method="post">
+<form method="post" enctype="multipart/form-data">
     <fieldset>
         <legend>Customer information</legend>
         <table>
@@ -41,6 +41,10 @@
             <tr>
                 <td>Address: </td>
                 <td><input type="text" name="address" id="address"></td>
+            </tr>
+            <tr>
+                <td>Avatar: </td>
+                <td> <input type = "file" name = "file" size = "50" />
             </tr>
             <tr>
                 <td></td>
